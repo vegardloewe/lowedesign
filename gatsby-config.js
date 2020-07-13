@@ -1,34 +1,40 @@
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
+    title: `Løwe Design`,
+    name: `Løwe Design`,
+    siteUrl: `https://lowedesign.no`,
     description: `This is my description that will be used in the meta tags and important for search results`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `Moderne og innovative løsninger på digitale utfordringer.`,
       maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
+        url: `https://twitter.com/VegardLoewe`,
       },
       {
-        name: `github`,
-        url: `https://github.com/narative`,
+        name: `behance`,
+        url: `https://www.behance.net/VegardLoewe`,
       },
       {
-        name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        name: `mailto`,
+        url: `mailto:vegard@lowedesign.no`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
+        url: `https://www.linkedin.com/in/vegard-lowe/`,
       },
       {
         name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        url: `https://dribbble.com/Vegardloewe`,
       },
+    ],
+    contact: [
+        {
+            name: `mailto`,
+            url: `mailto:vegard@lowedesign.no`,
+        }
     ],
   },
   plugins: [
@@ -38,7 +44,8 @@ module.exports = {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
         basePath: "/",
-        authorsPage: true,
+        authorsPage: false,
+        tags: true,
         sources: {
           local: true,
           // contentful: true,
@@ -61,6 +68,9 @@ module.exports = {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
       },
+    },
+    {
+        resolve: 'gatsby-plugin-scss-typescript',
     },
   ],
 };

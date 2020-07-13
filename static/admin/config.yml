@@ -20,8 +20,9 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "relation", collection: "authors", valueField: "name", searchFields: ["name"] }
-      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", timeFormat: false }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "DD-MM-YYYY", dateFormat: "DD-MM-YYYY", timeFormat: false }
       - { label: "Excerpt", name: "excerpt", widget: "string", required: false }
+      - { label: "Category", name: "category", widget: "string" }
       - { label: "Hero", name: "hero", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "authors"

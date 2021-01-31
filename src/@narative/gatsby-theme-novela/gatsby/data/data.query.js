@@ -12,6 +12,8 @@ const GatsbyFluid_withWebp = `
   sizes
 `;
 
+
+
 module.exports.local = {
   articles: `{
     articles: allArticle(
@@ -27,7 +29,7 @@ module.exports.local = {
           author
           categories
           tags
-          date(formatString: "DD MMM")
+          date(formatString: "Do MMM YYYY", locale: "nb")
           dateForSEO: date
           timeToRead
           category
@@ -114,7 +116,7 @@ module.exports.contentful = {
           slug
           secret
           category
-          date(formatString: "DD MMM")
+          date(formatString: "Do MMM YYYY", locale: "nb")
           dateForSEO: date
           hero {
             full: fluid(maxWidth: 944, quality: 100) {

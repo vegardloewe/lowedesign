@@ -32,6 +32,10 @@ const siteQuery = graphql`
         }
       }
     }
+    article {
+      title
+      date(formatString: "Do MMM YYYY", locale: "nb")
+    }
   }
 `;
 
@@ -108,6 +112,7 @@ const Article: Template = ({ pageContext, location }) => {
 };
 
 export default Article;
+
 
 const MobileControls = styled.div`
   position: relative;

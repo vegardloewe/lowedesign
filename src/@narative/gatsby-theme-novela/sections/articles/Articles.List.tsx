@@ -71,7 +71,6 @@ const ArticlesList: React.FC<ArticlesListProps> = ({
       alwaysShowAllDetails={alwaysShowAllDetails}
     >
       {articlePairs.map((ap, index) => {
-        const isEven = index % 2 !== 0;
         const isOdd = index % 2 !== 1;
 
         return (

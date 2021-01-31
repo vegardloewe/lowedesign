@@ -17,6 +17,7 @@ interface ArticleHeroProps {
   tags?: boolean;
 }
 
+
 const ArticleHero: React.FC<ArticleHeroProps> = ({
   article,
   authors,
@@ -37,7 +38,7 @@ const ArticleHero: React.FC<ArticleHeroProps> = ({
         <HeroSubtitle hasCoAUthors={hasCoAUthors}>
         <ArticleCategories categories={categories} />
           <ArticleMeta hasCoAUthors={hasCoAUthors}>
-            {article.category}{article.date}
+            {article.category}<time>{article.date}</time>
           </ArticleMeta>
         </HeroSubtitle>
         {tags && (

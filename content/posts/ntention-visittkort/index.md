@@ -1,5 +1,5 @@
 ---
-title: Visittkort - Ntention
+title: Visittkort2 - Ntention
 author: Vegard J. Løwe
 date: 2020-05-18
 hero: ./images/Business-card-3.jpg

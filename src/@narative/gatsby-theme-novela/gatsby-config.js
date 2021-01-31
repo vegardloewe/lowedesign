@@ -115,7 +115,7 @@ module.exports = ({
                     node {
                       body
                       excerpt
-                      date(formatString: "DD MMM")
+                      date(formatString: "Do MMM", locale: "nb")
                       slug
                       title
                       author
